@@ -1,3 +1,10 @@
+# **Cryptoblox**
+Blockchain is the future of digital finance that kids in K-12 schools need to learn about!
+
+We created a platformer obstacle course in Roblox that stores character points on parachains. Thus, students and children can build upon their own courses while learning about the code that harnesses blockchain. This Offers a beginner-friendly crypto sandbox to help K-12 kids learn about blockchain by implementing parachains within obstacle courses.
+Polkadot Parachains are utilized to store NFTs and smart contracts. Coins represent NFTs, which are minted upon collection, and course completions signify smart contracts, created upon course completion. After each course, both the NFTs and smart contracts are stored within Moonbeam parachains.
+
+
 js-server-test
 This repository contains a simple JavaScript server implementation using Node.js and Express.js. It demonstrates basic server setup, routing, and handling of GET and POST requests.
 Features
