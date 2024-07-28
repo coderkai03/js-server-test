@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roblox Data Interaction</title>
+</head>
+<body>
+  <h1>Roblox Data Interaction</h1>
+  <pre id="output"></pre>
+
+  <script>
+    // Function to fetch data from the server
+    async function fetchData() {
+      try {
+        const response = await fetch('http://localhost:3000/data');
+        if (!response.ok) {
+          throw new Error('Network response was bad ' + response.statusText);
+        }
+        const data = await response.json();
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+      }
+    }
+
+    // Fetch data as soon as the page loads
+    window.onload = fetchData;
+  </script>
+</body>
+</html>
